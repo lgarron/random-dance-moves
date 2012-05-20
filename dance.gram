@@ -1,5 +1,5 @@
 variation ::=
-    <modification> <move> <positionkind> <danceapplication> <extra>
+    <modification> <move> <positionkind> <danceapplication> <timing> <extra>
 
 
 
@@ -18,6 +18,8 @@ modification ::=
     chained |
     leaping |
 
+
+
 move ::=
     <pivotthing> |
     <basic> |
@@ -28,7 +30,90 @@ move ::=
     <tangothing> |
     <latinthing>
 
-# We'd like most variations to be a single one.
+
+
+positionkind ::=
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    from <position> |
+    in <position> |
+    into <position>
+
+position ::=
+    wedding cake handhold |
+    shadow position |
+    swingout position |
+    hammerlock |
+    waltz position |
+    cuddle position |
+    sweetheart position |
+    Lindy circle |
+    back-to-back position |
+
+
+
+danceapplication ::=
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    during <dance> |
+    while transitioning into <dance> |
+    as a line dance | # Suggested by Brett.
+
+
+
+timing ::=
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    in <timesignature> |
+
+
+# Suggested by Brett.
+timesignature ::=
+    4/4 time |
+    3/4 time |
+    5/4 time |
+    7/4 time |
+
+
 extra ::=
     |
     |
@@ -68,16 +153,20 @@ turnkind ::=
     inside |
     outside |
     illusion |
+    walk-around |
 
 turnmove ::=
     spin |
     turn |
+    wrap |
     he-goes-she-goes |
+
 
 basic ::=
     swingout |
     Charleston kicks |
     turning basic
+
 
 step ::=
     gallop |
@@ -85,14 +174,19 @@ step ::=
     foot-fudge |
     Suzie Q | # Suggested by Brett
     genuflection |
+    waterfall |
+    windmill |
+
 
 aerial ::=
     backflip |
     lift |
 
+
 tangothing ::=
     dip |
     ochos |
+
 
 pivotthing ::=
     <pivotkind> <pivotmove>
@@ -106,6 +200,7 @@ pivotkind ::=
 pivotmove ::=
     pivots |
     pivaloop |
+
 
 handthing ::=
     <handkind> <handmove> |
@@ -123,47 +218,14 @@ handmove ::=
     face loop |
     orbits |
     barrel roll |
+    shopping cart |
 
-
-
-positionkind ::=
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    from <position> |
-    in <position> |
-    into <position>
 
 latinthing ::=
     matador |
     sombrero |
 
-position ::=
-    wedding cake handhold |
-    shadow position |
-    swingout position |
-    hammerlock |
-    waltz position |
-    cuddle position |
-    sweetheart position |
-    Lindy circle |
-    back-to-back position |
+
 
 dance ::=
     <swingdance> |
@@ -188,9 +250,11 @@ swingkind ::=
     4-count |
     6-count |
 
+
 latindance ::=
     salsa |
     cha-cha |
+
 
 waltzdance ::=
     <waltzkind> waltz |
@@ -201,13 +265,17 @@ waltzkind ::=
     cross-step |
     Redowa |
 
+
 polkadance ::=
     polka |
     Maxixe |
     Schottische |
+    Zwiefacher | # Didn't want to group it with waltzes.
+
 
 discodance ::=
     hustle |
+
 
 choreodance ::=
     Bohemian National Polka |
@@ -217,34 +285,14 @@ choreodance ::=
     Kerry Polka Sets |
     Russian Mazurka Quadrille |
 
+
 mixerdance ::=
     Cross-Step Waltz Mixer |
     Polka Mixer |    
+
 
 linedance ::=
     Tokyo Polka |
     Bus Stop |
     Accelerating Travolta |
-
-danceapplication ::=
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    |
-    during <dance> |
-    while transitioning into <dance> |
-    as a line dance | # Suggested by Brett.
-
-# To add
-# waterfall
-# windmill
-# timing
-# dance
-#
+    Shim-Sham |
