@@ -2,9 +2,10 @@
 
 perl cgram.pl dance.gram
 
-echo "----"
+echo "Random Dance Moves a lá Richard Powers:"
 
 for i in {1..12}
 do
-  ocaml dance.ml
+  move=`ocaml dance.ml`
+  echo "- " $move # Hack to remove spaces.
 done

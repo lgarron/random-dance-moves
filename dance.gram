@@ -1,5 +1,5 @@
 variation ::=
-    <modification> <move> <extra> <positionkind>
+    <modification> <move> <positionkind> <danceapplication> <extra>
 
 
 
@@ -9,20 +9,23 @@ modification ::=
     reverse |
     role-reversed |
     backled |
-    free |
     gypsy |
     behind-the-back |
-    Mazurka
+    Mazurka |
+    zig-zag |
+    hesitation |
+    chained |
+    leaping |
 
 move ::=
-    <pivotmove> |
-    dip |
-    gallop |
+    <pivotthing> |
+    <basic> |
     <turn> |
-    ochos |
     <aerial> |
-    <handchangemove> |
-    face loop
+    <handmove> |
+    <step> |
+    <tangothing> |
+    <latinthing>
 
 # We'd like most variations to be a single one.
 extra ::=
@@ -38,37 +41,87 @@ extra ::=
     |
     |
     |
+    |
+    |
+    |
+    |
     followed by <variation> |
-    which resolves to <variation>
+    which resolves to <variation> |
 
 
 
 turn ::=
-    <turnkind> |
-    <turnmove>
+    <turnvariation> <turnkind> <turnmove> |
+
+turnvariation ::=
+    |
+    |
+    |
+    |
+    cross-body |
 
 turnkind ::=
     free |
     under-arm |
     rollaway |
     inside |
-    outside
+    outside |
+    illusion |
 
 turnmove ::=
-  spin |
-  turn
+    spin |
+    turn |
+    he-goes-she-goes |
+
+basic ::=
+    swingout |
+    Charleston kicks |
+    turning basic
+
+step ::=
+    gallop |
+    grapevine |
+    foot-fudge |
+    Suzie Q |
+    genuflection |
 
 aerial ::=
-  backflip
+    backflip |
+    lift |
+
+tangothing ::=
+    dip |
+    ochos |
+
+pivotthing ::=
+    <pivotkind> <pivotmove>
+
+pivotkind ::=
+    |
+    |
+    |
+    canter |
 
 pivotmove ::=
-  pivots |
-  pivaloop
+    pivots |
+    pivaloop |
 
-handchangemove ::=
+handthing ::=
+    <handkind> <handmove> |
+
+handkind ::=
+    |
+    |
+    |
+    wrap-around |
+
+handmove ::=
     hand change |
     Texas Tommy |
-    waist slide
+    waist slide |
+    face loop |
+    orbits |
+    barrel roll |
 
 
 
@@ -88,9 +141,17 @@ positionkind ::=
     |
     |
     |
+    |
+    |
+    |
+    |
     from <position> |
     in <position> |
     into <position>
+
+latinthing ::=
+    matador |
+    sombrero |
 
 position ::=
     wedding cake handhold |
@@ -98,3 +159,91 @@ position ::=
     swingout position |
     hammerlock |
     waltz position |
+    cuddle position |
+    sweetheart position |
+    Lindy circle |
+    back-to-back position |
+
+dance ::=
+    <swingdance> |
+    <latindance> |
+    <waltzdance> |
+    <polkadance> |
+    <discodance> |
+    <choreodance> |
+    <mixerdance> |
+    <linedance> |
+
+
+swingdance ::=
+    <swingkind> swing |
+    Lindy Hop |
+    Charleston |
+    blues
+
+swingkind ::=
+    |
+    |
+    4-count |
+    6-count |
+
+latindance ::=
+    salsa |
+    cha-cha |
+
+waltzdance ::=
+    <waltzkind> waltz |
+
+waltzkind ::=
+    |
+    rotary |
+    cross-step |
+    Redowa |
+
+polkadance ::=
+    polka |
+    Maxixe |
+    Schottische |
+
+discodance ::=
+    hustle |
+
+choreodance ::=
+    Bohemian National Polka |
+    Congress of Vienna |
+    Tokyo Polka |
+    Peanut Butter Jelly Time |
+    Kerry Polka Sets |
+    Russian Mazurka Quadrille |
+
+mixerdance ::=
+    Cross-Step Waltz Mixer |
+    Polka Mixer |    
+
+linedance ::=
+    Tokyo Polka |
+    Bus Stop |
+    Accelerating Travolta |
+
+danceapplication ::=
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    during <dance> |
+    while transitioning into <dance> |
+    as a line dance |
+
+# To add
+# waterfall
+# windmill
+# timing
+# dance
+#
