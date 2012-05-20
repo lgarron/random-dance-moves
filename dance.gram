@@ -1,0 +1,100 @@
+variation ::=
+    <modification> <move> <extra> <positionkind>
+
+
+
+modification ::=
+    |
+    |
+    reverse |
+    role-reversed |
+    backled |
+    free |
+    gypsy |
+    behind-the-back |
+    Mazurka
+
+move ::=
+    <pivotmove> |
+    dip |
+    gallop |
+    <turn> |
+    ochos |
+    <aerial> |
+    <handchangemove> |
+    face loop
+
+# We'd like most variations to be a single one.
+extra ::=
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    followed by <variation> |
+    which resolves to <variation>
+
+
+
+turn ::=
+    <turnkind> |
+    <turnmove>
+
+turnkind ::=
+    free |
+    under-arm |
+    rollaway |
+    inside |
+    outside
+
+turnmove ::=
+  spin |
+  turn
+
+aerial ::=
+  backflip
+
+pivotmove ::=
+  pivots |
+  pivaloop
+
+handchangemove ::=
+    hand change |
+    Texas Tommy |
+    waist slide
+
+
+
+positionkind ::=
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    |
+    from <position> |
+    in <position> |
+    into <position>
+
+position ::=
+    wedding cake handhold |
+    shadow position |
+    swingout position |
+    hammerlock |
+    waltz position |
