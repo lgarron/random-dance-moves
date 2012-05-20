@@ -6,9 +6,10 @@ variation ::=
 modification ::=
     |
     |
+    double |
     reverse |
     role-reversed |
-    backled |
+    back-led |
     gypsy |
     behind-the-back |
     Mazurka |
@@ -82,7 +83,7 @@ step ::=
     gallop |
     grapevine |
     foot-fudge |
-    Suzie Q |
+    Suzie Q | # Suggested by Brett
     genuflection |
 
 aerial ::=
@@ -239,7 +240,7 @@ danceapplication ::=
     |
     during <dance> |
     while transitioning into <dance> |
-    as a line dance |
+    as a line dance | # Suggested by Brett.
 
 # To add
 # waterfall

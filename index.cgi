@@ -54,7 +54,7 @@ cat <<HEREDOC
       <input type="submit"
 HEREDOC
 
-AGAINS=("Gimme Another!" "Welcome another chance intrusion!" "How do I get out of it?" "Tried that last Friday. I want a better one!")
+AGAINS=("Gimme Another!" "Welcome another chance intrusion!" "How do I get out of it?" "Tried that last Friday. I want a better one!" "Different &ne; Wrong" "I want one that will actually make me dizzy.")
 INDEX=$((RANDOM%${#AGAINS[@]}))
 AGAIN=${AGAINS[$INDEX]}
 echo "value=\"${AGAIN}\""
