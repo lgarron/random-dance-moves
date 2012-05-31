@@ -176,6 +176,7 @@ step ::=
     genuflection |
     waterfall |
     windmill |
+    swivels | # Suggested by Emily
 
 
 aerial ::=
@@ -219,6 +220,8 @@ handmove ::=
     orbits |
     barrel roll |
     shopping cart |
+    side pass |
+    sunburst # Suggested by Lauren
 
 
 latinthing ::=
