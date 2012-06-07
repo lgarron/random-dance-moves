@@ -17,6 +17,20 @@ modification ::=
     hesitation |
     chained |
     leaping |
+    triple | # Suggested by Nick
+    continuous | # Suggested by Nick
+    open | # Suggested by Nick
+    closed | # Suggested by Nick
+    one-handed | # Suggested by Nick
+    two-handed | # Suggested by Nick
+    troika | # Suggested by Nick
+    partner-switching | # Suggested by Nick
+    wrong-way | # Suggested by Nick
+    backwards | # Suggested by Nick
+    over-the-elbows | # Suggested by Nick
+    magic | # Suggested by Nick
+    easy-going | # Suggested by Nick
+    blind | # Suggested by Nick
 
 
 
@@ -67,7 +81,11 @@ position ::=
     sweetheart position |
     Lindy circle |
     back-to-back position |
-
+    crossed hands | # Suggested by Nick
+    airplane position | # Suggested by Nick
+    open position | # Suggested by Nick
+    Yale position | # Suggested by Nick
+    linked elbows | # Suggested by Nick
 
 
 danceapplication ::=
@@ -86,6 +104,8 @@ danceapplication ::=
     during <dance> |
     while transitioning into <dance> |
     as a line dance | # Suggested by Brett.
+    with a clap | # Suggested by Nick
+    with a stomp | # Suggested by Nick
 
 
 
@@ -145,6 +165,8 @@ turnvariation ::=
     |
     |
     cross-body |
+    tuck | # Suggested by Nick
+    tandem | # Suggested by Nick
 
 turnkind ::=
     free |
@@ -154,6 +176,7 @@ turnkind ::=
     outside |
     illusion |
     walk-around |
+    dishrag | # Suggested by Nick
 
 turnmove ::=
     spin |
@@ -177,6 +200,12 @@ step ::=
     waterfall |
     windmill |
     swivels | # Suggested by Emily
+    wheel | # Suggested by Nick
+    around the world | # Suggested by Nick
+    follower’s solo | # Suggested by Nick
+    hops | # Suggested by Nick
+    heel clicks | # Suggested by Nick
+    side sway | # Suggested by Nick
 
 
 aerial ::=
@@ -187,7 +216,7 @@ aerial ::=
 tangothing ::=
     dip |
     ochos |
-
+    molinete | # Suggested by Nick
 
 pivotthing ::=
     <pivotkind> <pivotmove>
@@ -211,6 +240,7 @@ handkind ::=
     |
     |
     wrap-around |
+    cloud hands | # Suggested by Nick
 
 handmove ::=
     hand change |
@@ -221,13 +251,22 @@ handmove ::=
     barrel roll |
     shopping cart |
     side pass |
-    sunburst # Suggested by Lauren
+    sunburst | # Suggested by Lauren
+    whip | # Suggested by Nick
+    loop-de-loops | # Suggested by Nick
+    tunnel | # Suggested by Nick
+    pretzel | # Suggested by Nick
+    windows | # Suggested by Nick
+    Zillertaler Landler arms | # Suggested by Nick
+    shoulder catch | # Suggested by Nick
 
 
 latinthing ::=
     matador |
     sombrero |
-
+    tornado | # Suggested by Nick
+    mixmaster | # Suggested by Nick
+    neck roll | # Suggested by Nick
 
 
 dance ::=
@@ -235,6 +274,7 @@ dance ::=
     <latindance> |
     <waltzdance> |
     <polkadance> |
+    <walkeydance> |
     <discodance> |
     <choreodance> |
     <mixerdance> |
@@ -245,19 +285,23 @@ swingdance ::=
     <swingkind> swing |
     Lindy Hop |
     Charleston |
-    blues
+    blues |
 
 swingkind ::=
     |
     |
     4-count |
     6-count |
+    west coast | # Suggested by Nick
 
 
 latindance ::=
     salsa |
     cha-cha |
-
+    tango | # Suggested by Nick
+    merengue | # Suggested by Nick
+    samba | # Suggested by Nick
+    rumba | 
 
 waltzdance ::=
     <waltzkind> waltz |
@@ -274,16 +318,22 @@ polkadance ::=
     Maxixe |
     Schottische |
     Zwiefacher | # Didn't want to group it with waltzes.
+    hambo | # Suggested by Nick
+
+walkeydance ::=
+    one-step | # Suggested by Nick
+    quickstep |
+    foxtrot | # Suggested by Nick
 
 
 discodance ::=
     hustle |
+    club two step | # Suggested by Nick
 
 
 choreodance ::=
     Bohemian National Polka |
     Congress of Vienna |
-    Tokyo Polka |
     Peanut Butter Jelly Time |
     Kerry Polka Sets |
     Russian Mazurka Quadrille |
