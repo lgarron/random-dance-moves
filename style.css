@@ -1,0 +1,31 @@
+body {
+  background: #FFE;
+  font-family: Helvetica, Tahoma, Arial, sans-serif;
+}
+
+#main {
+  font-size: 120%;
+  background: #FCC;
+  padding: 1em 1em 2em;
+  width: 80%;
+  margin: 2em auto;
+  border-radius: 1em;
+  text-align: center;
+}
+
+#variation {
+  font-size: 180%;
+  width: 80%;
+  margin: auto;
+  padding: 1em;
+  background: #F98;
+  border-radius: 1em;
+}
+
+button {
+  margin: 1em 0em 0em;
+  padding: 1em;
+  width: 50%;
+  height: 3em;
+  font-size: 100%;
+}
