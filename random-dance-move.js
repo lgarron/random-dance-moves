@@ -286,7 +286,8 @@ var expand = function(term) {
     return term;
   }
   var subterms = randomChoice(grammar[term]).split(" ");
-  return subterms.map(expand).filter(x => x!="").join(" ")
+  var nonEmpty = function(x){return x!=""};
+  return subterms.map(expand).filter(nonEmpty).join(" ")
 }
 
 var go = function() {
